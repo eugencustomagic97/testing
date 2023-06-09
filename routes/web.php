@@ -17,5 +17,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+/** --  */
+
 Route::get('/tg.bot', [App\Http\Controllers\BotController::class,'index']);
 Route::post('/callback/telegramm', [App\Http\Controllers\BotController::class,'callback']);
