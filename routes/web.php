@@ -17,6 +17,10 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/test2', function () {
+    dd('test2');
+});
+
 /** --  */
 
 Route::get('/tg.bot', [App\Http\Controllers\BotController::class,'index']);
